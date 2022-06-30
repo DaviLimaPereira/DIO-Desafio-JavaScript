@@ -9,15 +9,59 @@
     <title>Teste 01</title>
 </head>
 <body>
-    <h1>Olá Visitante!</h1><hr>  
+    <h1 class="titulo">DESAFIO: Contadores</h1>
+            <p class="texto">
+                Desafio do módulo Introdução ao JavaScript disponibilizado 
+                pelo SANTNADER Bootcamp Fullstack Developer.
+            </p>
+    <div class="conteudo">
 
-    <div id="counter">
-        <h1>Contador</h1>
-        <p>Projeto prático #1 de Contador em JavaScript</p>
-        <button name="subtrair" onclick="decrement()">-</button>
-        <span id="currentNumber">0</span>
-        <button name="adicionar" onclick="increment()">+</button>
+        <!-- Contador #1 -->
+        <div class="contador">
+            <h1>Contador #1</h1><hr>
+            <p class="descricao">
+                Este é o desafio de criar um contador básico.
+            </p>
+            <div class="counterApp">
+                <button name="subtrair" onclick="decrement()">-</button>
+                <span id="currentNumber">0</span>
+                <button name="adicionar" onclick="increment()">+</button>
+            </div>
+        </div>
+
+        <!-- Contador #2 -->
+        <div class="contador">
+            <h1>Contador #2</h1><hr>
+            <p class="descricao">Este é o desafio de bloquear os botões quando a contagem chegar
+                a 0 ou 10.
+            </p>
+            <div class="counterApp">
+                <button id="subtrair2" onclick="decrementStop()">-</button>
+                <span id="currentNumber2">0</span>
+                <button id="adicionar2" onclick="incrementStop()">+</button>
+            </div>
+        </div>
+
+        <!-- Contador #3 -->
+        <div class="contador">
+            <h1>Contador #3</h1><hr>
+            <p class="descricao">Este é o desafio de alterar a cor do número quando este for 
+                negativo.
+            </p>
+            <div class="counterApp">
+                <button name="subtrair" onclick="decrementRed()">-</button>
+                <span id="currentNumber3">0</span>
+                <button name="adicionar" onclick="incrementRed()">+</button>
+            </div>
+        </div>
     </div>
+
+    <div class="desafio">
+        <a href="../Desafio To-do list/index.html">
+            Desafio To-do list
+        </a>
+    </div>
+
 </body>
 <script src="./assets/js/script.js"></script>
 </html>
